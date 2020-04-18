@@ -33,7 +33,7 @@
 	</path>
 
 	<target name="_get-version" unless="${project.version}">
-		<condition property="git.command" value="git.cmd">
+		<condition property="git.command" value="git">
 			<os family="windows" />
 		</condition>
 		<condition property="git.command" value="git">
