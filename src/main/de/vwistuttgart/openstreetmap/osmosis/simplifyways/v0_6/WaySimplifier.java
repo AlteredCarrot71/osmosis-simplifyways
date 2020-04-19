@@ -69,12 +69,8 @@ public class WaySimplifier implements SinkSource, EntityProcessor {
 	}
 
 	@Override
-	public void release() {
-		if (nodeStoreReader != null) {
-			nodeStoreReader.release();
-		}
-		nodeStore.release();
-		sink.release();
+	public void close() {
+		// Nothing to do here
 	}
 
 	@Override
